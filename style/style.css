@@ -28,7 +28,7 @@ html {
   
   section {
     height: 100vh;
-    border: 2px dashed #f0f0f0;
+    
   }
   
   /* Navbar */
@@ -47,7 +47,7 @@ html {
     align-items: center;
     width: 100%;
     height: inherit;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .navbar__logo {
@@ -59,8 +59,13 @@ html {
     align-items: center;
     gap: .25rem;
     text-decoration: none;
+    color: #adadad;
   }
   
+  .navbar__list :hover{
+    color:#286f6c
+  }
+
   .navbar__icon {
     font-size: 1.2rem;
   }
@@ -70,7 +75,7 @@ html {
   }
   
   .navbar__menu {
-    width: 100%;
+    /* width: 100%; */
     background-color: #fff;
   }
   
@@ -194,9 +199,10 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px;
     padding: 10px;
     height: auto;
+    max-width: 1024px;
+    margin: 0 auto;
   }
 
   .viewdestock{
@@ -243,7 +249,8 @@ html {
   .foto{
     width: auto;
     height: auto;
-    padding: 0;
+    padding: 0; 
+    
   }
 }
 
@@ -260,7 +267,6 @@ html {
     margin: 2rem 1rem;
     font-size: 32px;
     color: #286f6c;
-    
   }
   
   .content_about{
@@ -273,17 +279,19 @@ html {
 .conteiner_about{
   width: 100%;
   height: auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .tittle_about{
-  margin: 3rem 8rem;
+  margin: 1rem 8rem;
   font-size: 32px;
   color: #286f6c;
   
 }
 
 .content_about{
-  margin: 3rem 8rem;
+  margin: 1.5rem 8rem;
   color: #adadad;
 }
 }
@@ -337,6 +345,8 @@ html {
   flex-direction: column;
   justify-content: start;
   height: 450px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .habilidades__title{
@@ -359,11 +369,20 @@ html {
 
 .box_habilidades{
   background-color: #fef2f2;
-  width: 250px;
+  width: 350px;
   height: 300px;
+  padding: 20px;
+  text-align: start;
 }
 }
 
+.box_habilidades h2{
+  margin: 0;
+}
+
+.box_habilidades h2 img{
+  width: auto;
+}
 
 /* experiencia */
 /* vista mobile */
@@ -402,6 +421,8 @@ html {
 @media (min-width: 401px) {
 .container_experiencia{
   height: auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 .experiencia__title{
   color: #286f6c;
@@ -482,6 +503,8 @@ html {
   grid-template-rows: repeat(4, 1fr);
   padding: 0rem 3rem;
   column-gap: 3rem;
+  max-width: 1024px;
+  margin: 0 auto;
 
 }
 
@@ -567,6 +590,8 @@ html {
 @media (min-width: 401px) {
 .container_contact{
   height: auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .contacto__title{
@@ -612,13 +637,14 @@ html {
 
 .container_Footer{
   background-color: #286f6c;
-  height: 200px;
+  height: auto;
 }
 
 .container_Footer h2{
   font-size: 36px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
   
 }
 
@@ -626,6 +652,5 @@ html {
   font-size: 24px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 5px;
-  
+  margin-bottom: 0px;
 }
